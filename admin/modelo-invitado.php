@@ -32,7 +32,7 @@ if($_POST['registro']=='nuevo'){
     try {
             
 
-        $stmt=$conn->prepare("INSERT INTO `invitados` (`invitado_id`, `nombre_invitado`, `apellido_invitado`, `descripcion`, `url_imagen`) VALUES (NULL, ?, ?, ?, ?)");
+        $stmt=$conn->prepare("INSERT INTO `invitados` (`nombre_invitado`, `apellido_invitado`, `descripcion`, `url_imagen`) VALUES (?, ?, ?, ?)");
         $stmt->bind_param("ssss", $nombre, $apellido, $biografia, $imagen_url);
         $stmt->execute();
         $id_insertado=$stmt->insert_id;

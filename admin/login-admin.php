@@ -5,7 +5,8 @@ if(isset($_POST['login-admin'])){
 
 try {
     //code...
-    include_once ('funciones/funciones.php');
+    
+    include_once("funciones/funciones.php");
     $stmt = $conn->prepare("SELECT * FROM adminis WHERE usuario=?;");
     $stmt->bind_param("s",$usuario);
     $stmt->execute();

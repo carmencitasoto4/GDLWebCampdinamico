@@ -63,6 +63,6 @@ include_once 'funciones/funciones.php';
 
 
 <?php
-  include_once 'templates/footer.php';
+  include_once "templates/footer.php";
 ?>
 
