@@ -41,7 +41,7 @@ $(function() {
     $(".resumen-evento li:nth-child(4) p").animateNumber({ number: 9 }, 1200);
 
     //cuenta regresiva//
-    $(".cuenta-regresiva").countdown("2021/10/04 09:00:00", function(event) {
+    $(".cuenta-regresiva").countdown("2022/10/04 09:00:00", function(event) {
             $("#dias").html(event.strftime('%D'))
             $("#horas").html(event.strftime('%H'))
             $("#minutos").html(event.strftime('%M'))

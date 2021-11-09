@@ -86,9 +86,7 @@ foreach($lista_eventos as $eventos){?>
 <?php } ?>
 
 
-<pre>
- <?php var_dump($calendario); ?>
- </pre>
+
 
 
 
